@@ -1,0 +1,83 @@
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# --- IDE files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.iml
+
+# --- Environment files ---
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+# Service configuration env (contains SMTP credentials & service URLs)
+config.env
+config.env.*
+!config.env.example
+
+# --- Node.js ---
+node_modules/
+**/node_modules/
+.next/
+**/ .next/
+dist/
+build/
+out/
+
+# --- Go ---
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+.gocache/
+.gomodcache/
+.gopath/
+bin/
+**/bin/
+
+# --- Terraform ---
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/terraform.tfvars
+**/.terraform.lock.hcl
+
+# --- Ansible ---
+**/ansible.log
+**/group_vars/secrets.yml
+**/group_vars/secrets.vault.yml
+**/.vault_pass
+**/*.retry
+
+# --- AI/Assistant Temp ---
+.gemini/
+.brain/
+artifacts/
+scratch/
+*_report.md
+
+# --- Database/Storage ---
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+**/uploads/
+
+# --- Secrets & Keys ---
+*.pem
+*.key
+*.pub
+**/id_rsa
+**/id_rsa.pub
+**/service-account-key.json
+**/k8s/secret.yaml
